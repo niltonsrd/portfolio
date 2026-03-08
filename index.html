@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfólioDev | Desenvolvedor Full Stack</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+
+    <!-- Tela de carregamento -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Barra de progresso de rolagem -->
+    <div class="progress-bar"></div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+                <span class="logo-dot"></span>
+                NT<span>Dev</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-button">Contratar</a>
+
+        </div>
+
+    </nav>
+
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="greeting">👋 Olá, eu sou</p>
+
+                <h1 class="hero-name">
+                    Nilton Santos
+                </h1>
+
+                <h2 class="hero-role">
+                    <span class="typing-text"></span>
+                </h2>
+
+                <p class="description">
+                    Desenvolvedor Python focado em criar aplicações web completas,
+                    APIs robustas e sistemas escaláveis.
+                    Experiência no desenvolvimento de plataformas reais como sistemas de delivery,
+                    painéis administrativos e aplicações full stack modernas.
+                </p>
+
+                <div class="hero-tech">
+
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+
+                </div>
+
+                <div class="cta-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Ver Projetos
+                    </a>
+
+                    <a href="https://github.com/niltonsrd" class="btn btn-github">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="pc-card-wrapper">
+
+                <div class="hero-energy"></div>
+                <div class="hero-orbit"></div>
+                <div class="hero-particles"></div>
+
+                <div class="pc-card">
+
+                    <div class="pc-inside">
+
+                        <img src="assets/img/profile.png" class="pc-avatar">
+
+                        <div class="pc-shine"></div>
+                        <div class="pc-glare"></div>
+                        <div class="pc-specular"></div>
+                        <div class="pc-border"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Sobre <span class="highlight">Mim</span></h2>
+
+            <div class="about-card">
+
+                <div class="about-left">
+
+                    <p>
+                        Sou um Desenvolvedor Full Stack apaixonado por criar aplicações web modernas,
+                        intuitivas e eficientes. Possuo experiência tanto no desenvolvimento
+                        front-end quanto back-end.
+                    </p>
+
+                    <p>
+                        Minha jornada na programação começou há 3 anos e desde então venho desenvolvendo
+                        diversos projetos, desde plataformas de e-commerce até dashboards de dados.
+                    </p>
+
+                    <div class="stats">
+
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Projetos</p>
+                        </div>
+
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Clientes</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="about-right">
+
+                    <div class="skill">
+
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+                            <div style="width:95%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div style="width:85%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <span>Python / Flask</span>
+                        <div class="skill-bar">
+                            <div style="width:80%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div style="width:75%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="skills" class="section bg-darker">
+
+        <div class="container">
+
+            <h2 class="section-title">Minhas <span class="highlight">Tecnologias</span></h2>
+
+            <div class="tech-grid">
+
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fas fa-flask"></i>
+                    <span>Flask</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-linux"></i>
+                    <span>Linux</span>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Projetos em <span class="highlight">Destaque</span></h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card glass">
+
+                    <div class="project-img">
+                        <img src="assets/img/delivery.png" alt="Projeto Delivery">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Plataforma Delivery Cardápio + Administrativo</h3>
+
+                        <p>
+                            Aplicação completa de Delivery com cardápio interativo, sistema de pedidos e painel
+                            administrativo.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/niltonsrd/Dev-Restaurant" target="_blank">GitHub</a>
+                            <a href="https://dev-restaurant.onrender.com" target="_blank">Demonstração</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+
+                    <div class="project-img">
+                        <img src="assets/img/portifolio.png" alt="Projeto Portfólio">
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Portifólio Profissional Interativo</h3>
+
+                        <p>
+                            Portfólio pessoal desenvolvido com HTML + CSS + JavaScript, apresentando projetos,
+                            habilidades e
+                            experiência de forma dinâmica e responsiva.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Vamos <span class="highlight">Trabalhar Juntos</span>
+            </h2>
+
+            <p class="contact-subtitle">
+                Tem um projeto em mente ou precisa de um desenvolvedor?
+                Preencha o formulário ou fale comigo diretamente.
+            </p>
+
+            <div class="contact-wrapper">
+
+                <!-- FORMULÁRIO -->
+
+                <form action="https://formsubmit.co/joseniltonp1996@hotmail.com" method="POST"
+                    class="contact-form glass">
+
+                    <input type="hidden" name="_subject" value="Novo contato do portfólio">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Seu Nome</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Tipo de Projeto</label>
+                            <select name="project">
+
+                                <option>Website</option>
+                                <option>Sistema Web</option>
+                                <option>Automação</option>
+                                <option>API</option>
+                                <option>Outro</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Orçamento Estimado</label>
+                            <select name="budget">
+
+                                <option>Até R$500</option>
+                                <option>R$500 - R$1500</option>
+                                <option>R$1500 - R$5000</option>
+                                <option>Acima de R$5000</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-submit">
+                        Enviar Mensagem
+                    </button>
+
+                </form>
+
+                <!-- CONTATO DIRETO -->
+
+                <div class="contact-direct glass">
+
+                    <h3>Contato Rápido</h3>
+
+                    <p>
+                        Se preferir, entre em contato diretamente comigo:
+                    </p>
+
+                    <a href="https://wa.me/5571991118924?text=Olá%20Nilton,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20sobre%20um%20projeto."
+                        class="contact-btn whatsapp">
+
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+
+                    </a>
+
+                    <a href="mailto:joseniltonp1996@hotmail.com" class="contact-btn email">
+
+                        <i class="fas fa-envelope"></i>
+                        Email
+
+                    </a>
+
+                    <div class="contact-info">
+
+                        <div>
+                            <span>📍 Localização</span>
+                            <p>Salvador, Bahia</p>
+                        </div>
+
+                        <div>
+                            <span>⏱ Disponibilidade</span>
+                            <p>Freelance / Remoto</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section terminal-section">
+        <div class="container">
+
+            <h2 class="section-title">Terminal <span class="highlight">Dev</span></h2>
+
+            <div class="terminal">
+
+                <div class="terminal-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-body">
+
+                    <p class="terminal-p">> Sobre</p>
+                    <p class="terminal-p">Desenvolvedor Full Stack apaixonado por tecnologia</p>
+
+                    <p class="terminal-p">> Skills</p>
+                    <p class="terminal-p">Python • Flask • HTML • CSS • JavaScript • MySQL</p>
+
+                    <p class="terminal-p">> Projetos</p>
+                    <p class="terminal-p">APIs, Sistemas Web, Automação e Dashboards</p>
+
+                    <p class="terminal-p">> Status</p>
+                    <p class="blink">Disponível para oportunidades...</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Visitantes</h2>
+
+            <div align="center">
+
+                <img src="https://api.visitorbadge.io/api/combined?path=SEUSITE&countColor=%237c5cff">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Portfólio Dev. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        })
+    </script>
+
+</body>
+
+</html>
