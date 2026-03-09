@@ -50,13 +50,45 @@ border-radius:14px;
 border:1px solid rgba(255,255,255,0.08);
 box-shadow:0 20px 60px rgba(0,0,0,0.5);
 z-index:1000;
+position: fixed;
 }
 
 .nav-container{
+position: relative;
 display:flex;
 align-items:center;
 justify-content:space-between;
 padding:12px 30px;
+}
+
+.hamburger{
+
+display:none;
+
+flex-direction:column;
+gap:5px;
+
+cursor:pointer;
+
+}
+
+.hamburger span{
+
+width:24px;
+height:3px;
+
+background:white;
+
+border-radius:3px;
+
+}
+
+.nav-right{
+
+display:flex;
+align-items:center;
+gap:20px;
+
 }
 
 /* LOGO */
@@ -1319,4 +1351,305 @@ height:4px;
 background:#7c5cff;
 width:0%;
 z-index:2000;
+}
+
+/* =================================
+RESPONSIVIDADE GLOBAL
+================================= */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+html, body{
+overflow-x:hidden;
+}
+
+
+/* =================================
+TABLET
+================================= */
+
+@media (max-width:1024px){
+
+.container{
+max-width:900px;
+padding:0 30px;
+}
+
+/* HERO */
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+gap:60px;
+}
+
+.hero-text{
+order:1;
+}
+
+.pc-card-wrapper{
+order:2;
+margin:auto;
+transform:scale(.9);
+}
+
+.hero-tech{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.cta-buttons{
+justify-content:center;
+}
+
+
+/* ABOUT */
+
+.about-card{
+grid-template-columns:1fr;
+text-align:center;
+gap:50px;
+}
+
+.stats{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+/* TECNOLOGIAS */
+
+.tech-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+
+/* PROJETOS */
+
+.projects-grid{
+grid-template-columns:1fr 1fr;
+}
+
+
+/* CONTATO */
+
+.contact-wrapper{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+}
+
+
+/* =================================
+MOBILE
+================================= */
+
+@media (max-width:768px){
+
+.section{
+padding:90px 0;
+}
+
+.container{
+padding:0 25px;
+}
+
+
+/* NAVBAR */
+
+.hamburger{
+display:flex;
+}
+
+.nav-button{
+display:none;
+}
+
+.nav-links{
+
+position:absolute;
+top:70px;
+right:20px;
+
+width:220px;
+
+background:rgba(20,20,40,0.95);
+
+flex-direction:column;
+gap:18px;
+
+padding:20px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:0 20px 50px rgba(0,0,0,.7);
+
+display:none;
+
+}
+
+.nav-links.active{
+display:flex;
+}
+
+
+/* HERO */
+
+.hero-name{
+font-size:38px;
+line-height:1.2;
+}
+
+.hero-role{
+font-size:20px;
+}
+
+.description{
+font-size:15px;
+max-width:500px;
+margin:auto;
+}
+
+.hero-tech{
+justify-content:center;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.hero-tech span{
+font-size:13px;
+}
+
+.cta-buttons{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.btn{
+width:220px;
+}
+
+
+/* PROFILE CARD */
+
+.pc-card-wrapper{
+width:260px;
+height:420px;
+}
+
+
+/* TECNOLOGIAS */
+
+.tech-grid{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+
+/* PROJETOS */
+
+.projects-grid{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.project-card{
+max-width:500px;
+margin:auto;
+}
+
+
+/* CONTATO */
+
+.form-row{
+grid-template-columns:1fr;
+}
+
+.contact-direct{
+align-items:center;
+}
+
+.contact-btn{
+width:220px;
+}
+
+}
+
+
+/* =================================
+CELULAR PEQUENO
+================================= */
+
+@media (max-width:480px){
+
+.section{
+padding:70px 0;
+}
+
+.container{
+padding:0 18px;
+}
+
+
+/* HERO */
+
+.hero-name{
+font-size:30px;
+}
+
+.hero-role{
+font-size:18px;
+}
+
+.description{
+font-size:14px;
+}
+
+.hero-tech span{
+font-size:12px;
+padding:6px 10px;
+}
+
+
+/* PROFILE CARD */
+
+.pc-card-wrapper{
+width:230px;
+height:370px;
+}
+
+
+/* ABOUT */
+
+.about-left p{
+font-size:14px;
+line-height:1.6;
+}
+
+
+/* PROJETOS */
+
+.project-info h3{
+font-size:18px;
+}
+
+.project-info p{
+font-size:14px;
+}
+
+
+/* FORM */
+
+.contact-form{
+padding:25px;
+}
+
 }
