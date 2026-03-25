@@ -177,7 +177,8 @@ box-shadow:0 10px 25px rgba(124,92,255,0.6);
 
 /* HERO */
 
-.hero{
+.hero {
+margin-top: 100px;
 min-height:100vh;
 display:flex;
 align-items:center;
