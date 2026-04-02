@@ -177,7 +177,8 @@ box-shadow:0 10px 25px rgba(124,92,255,0.6);
 
 /* HERO */
 
-.hero{
+.hero {
+margin-top: 100px;
 min-height:100vh;
 display:flex;
 align-items:center;
@@ -271,6 +272,7 @@ font-size:4rem;
 font-weight:700;
 background:linear-gradient(90deg,#7c5cff,#00d4ff);
 -webkit-background-clip:text;
+background-clip:text;
 color:transparent;
 }
 
@@ -1030,6 +1032,11 @@ display:block;
 
 .project-info{
 padding:20px;
+}
+
+.project-info h3{
+font-size:22px;
+margin-bottom:10px;
 }
 
 .tags{
